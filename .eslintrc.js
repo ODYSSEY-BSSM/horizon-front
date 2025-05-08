@@ -1,8 +1,14 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier', 'unused-imports'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:unused-imports/recommended',
+    'prettier',
+  ],
   env: {
     node: true,
     browser: true,
@@ -16,5 +22,6 @@ module.exports = {
     'no-unused-imports': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
+    'unused-imports/no-unused-imports': 'error',
   },
 };
