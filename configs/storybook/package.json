@@ -1,0 +1,16 @@
+{
+  "name": "@configs/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "@storybook/addon-a11y": "^7.0.2",
+    "@storybook/addon-actions": "^7.0.2",
+    "@storybook/addon-docs": "^7.0.2",
+    "@storybook/addon-essentials": "^7.0.2",
+    "@storybook/addon-links": "^7.0.2",
+    "@storybook/react": "^7.0.2",
+    "@storybook/react-webpack5": "^7.0.2",
+    "storybook": "^7.0.2"
+  }
+}
