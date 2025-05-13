@@ -1,6 +1,7 @@
 {
-  "name": "@packages/design-system",
+  "name": "@horizon/design-system",
   "version": "0.1.0",
+  "description": "Horizon Design System - A comprehensive design system for React applications",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,11 +10,30 @@
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ODYSSEY-BSSM/horizon-shared-ui.git"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "ui",
+    "components",
+    "horizon"
+  ],
+  "author": "ODYSSEY-BSSM",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint src/**/*.ts*",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.6",
