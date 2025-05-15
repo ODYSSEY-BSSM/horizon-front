@@ -303,9 +303,9 @@ export const SemanticUsage: Story = {
       <Text variant="T_SB_20" tag="h2" style={{ marginTop: '16px' }}>
         섹션 제목
       </Text>
+      {/* prettier-ignore */}
       <Text variant="P_R_16" tag="p" style={{ marginTop: '12px' }}>
-        이것은 단락 텍스트입니다. 시맨틱한 HTML 태그 사용으로 접근성을 개선할 수
-        있습니다.
+        이것은 단락 텍스트입니다. 시맨틱한 HTML 태그 사용으로 접근성을 개선할 수 있습니다.
       </Text>
       <Text
         variant="C_SB_12"
