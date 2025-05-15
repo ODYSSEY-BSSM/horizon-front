@@ -136,11 +136,11 @@ export const AllVariants: Story = {
       <div>
         <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Subtitles</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <Text variant="S_M_20">S_M_20 - Subtitle 20px Medium</Text>
-          <Text variant="S_M_16">S_M_16 - Subtitle 16px Medium</Text>
-          <Text variant="S_M_14">S_M_14 - Subtitle 14px Medium</Text>
-          <Text variant="S_M_12">S_M_12 - Subtitle 12px Medium</Text>
-          <Text variant="S_M_8">S_M_8 - Subtitle 8px Medium</Text>
+          <Text variant="B_M_20">B_M_20 - Subtitle 20px Medium</Text>
+          <Text variant="B_M_16">B_M_16 - Subtitle 16px Medium</Text>
+          <Text variant="B_M_14">B_M_14 - Subtitle 14px Medium</Text>
+          <Text variant="B_M_12">B_M_12 - Subtitle 12px Medium</Text>
+          <Text variant="B_M_8">B_M_8 - Subtitle 8px Medium</Text>
         </div>
       </div>
 
