@@ -13,8 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "incremental": true
+    "jsxImportSource": "@emotion/react"
   },
   "exclude": ["node_modules"]
 }
