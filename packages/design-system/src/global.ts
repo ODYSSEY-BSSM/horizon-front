@@ -21,8 +21,8 @@ export const globalStyle = css`
   }
 
   body {
-    font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      'Helvetica Neue', Arial, sans-serif;
+    font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.5;
     background-color: ${colors.background};
     color: ${colors.grayscale[900]};

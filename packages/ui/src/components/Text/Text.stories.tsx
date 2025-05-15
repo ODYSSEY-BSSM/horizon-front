@@ -110,10 +110,30 @@ export const AllVariants: Story = {
     children: '기본 텍스트',
   },
   render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px',
+      }}
+    >
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Headings</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Headings
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="H_B_28">H_B_28 - Heading 28px Bold</Text>
           <Text variant="H_B_24">H_B_24 - Heading 24px Bold</Text>
           <Text variant="H_B_20">H_B_20 - Heading 20px Bold</Text>
@@ -123,8 +143,22 @@ export const AllVariants: Story = {
       </div>
 
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Titles</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Titles
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="T_SB_24">T_SB_24 - Title 24px SemiBold</Text>
           <Text variant="T_SB_20">T_SB_20 - Title 20px SemiBold</Text>
           <Text variant="T_SB_16">T_SB_16 - Title 16px SemiBold</Text>
@@ -134,8 +168,22 @@ export const AllVariants: Story = {
       </div>
 
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Subtitles</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Subtitles
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="B_M_20">B_M_20 - Subtitle 20px Medium</Text>
           <Text variant="B_M_16">B_M_16 - Subtitle 16px Medium</Text>
           <Text variant="B_M_14">B_M_14 - Subtitle 14px Medium</Text>
@@ -145,16 +193,44 @@ export const AllVariants: Story = {
       </div>
 
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Paragraphs</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Paragraphs
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="P_R_16">P_R_16 - Paragraph 16px Regular</Text>
           <Text variant="P_R_12">P_R_12 - Paragraph 12px Regular</Text>
         </div>
       </div>
 
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Buttons</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Buttons
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="BTN_SB_16">BTN_SB_16 - Button 16px SemiBold</Text>
           <Text variant="BTN_SB_14">BTN_SB_14 - Button 14px SemiBold</Text>
           <Text variant="BTN_SB_12">BTN_SB_12 - Button 12px SemiBold</Text>
@@ -162,8 +238,22 @@ export const AllVariants: Story = {
       </div>
 
       <div>
-        <h3 style={{ marginBottom: '8px', fontSize: '14px', color: '#666' }}>Others</h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <h3
+          style={{
+            marginBottom: '8px',
+            fontSize: '14px',
+            color: '#666',
+          }}
+        >
+          Others
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+          }}
+        >
           <Text variant="C_SB_12">C_SB_12 - Caption 12px SemiBold</Text>
           <Text variant="L_M_12">L_M_12 - Label 12px Medium</Text>
         </div>
@@ -173,7 +263,8 @@ export const AllVariants: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'Text 컴포넌트에서 사용 가능한 모든 variant를 한눈에 볼 수 있습니다.',
+        story:
+          'Text 컴포넌트에서 사용 가능한 모든 variant를 한눈에 볼 수 있습니다.',
       },
     },
   },
@@ -212,13 +303,18 @@ export const SemanticUsage: Story = {
       <Text variant="T_SB_20" tag="h2" style={{ marginTop: '16px' }}>
         섹션 제목
       </Text>
+      {/* prettier-ignore */}
       <Text variant="P_R_16" tag="p" style={{ marginTop: '12px' }}>
         이것은 단락 텍스트입니다. 시맨틱한 HTML 태그 사용으로 접근성을 개선할 수 있습니다.
       </Text>
       <Text
         variant="C_SB_12"
         tag="span"
-        style={{ marginTop: '8px', display: 'block', color: '#666' }}
+        style={{
+          marginTop: '8px',
+          display: 'block',
+          color: '#666',
+        }}
       >
         캡션이나 메타데이터
       </Text>
@@ -244,7 +340,8 @@ export const Interactive: Story = {
   parameters: {
     docs: {
       description: {
-        story: '상단의 컨트롤을 사용하여 텍스트 속성을 실시간으로 변경해볼 수 있습니다.',
+        story:
+          '상단의 컨트롤을 사용하여 텍스트 속성을 실시간으로 변경해볼 수 있습니다.',
       },
     },
   },
