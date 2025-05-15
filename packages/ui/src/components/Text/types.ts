@@ -32,5 +32,5 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   textAlign?: CSSProperties['textAlign'];
   ellipsis?: boolean;
   whiteSpace?: CSSProperties['whiteSpace'];
-  tag?: 'span' | 'p' | 'h1' | 'h2';
+  tag?: 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
