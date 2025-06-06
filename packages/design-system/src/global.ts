@@ -1,8 +1,10 @@
+
 import { css } from '@emotion/react';
 import { colors } from './color';
 
 export const globalStyle = css`
   @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css');
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
   *,
   *::before,
