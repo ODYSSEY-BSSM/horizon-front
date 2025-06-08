@@ -2,11 +2,6 @@ import styled from '@emotion/styled';
 import { makeIconStyle } from './styles';
 import type { IconProps, StyledIconProps } from './types';
 
-const StyledIcon = styled.span<StyledIconProps>`
-  ${({ size = 'medium', weight = 'regular', fill = 'regular' }) =>
-    makeIconStyle(size, weight, fill)}
-`;
-
 export const Icon = ({
   name,
   size = 'medium',
@@ -18,3 +13,8 @@ export const Icon = ({
     {name}
   </StyledIcon>
 );
+
+const StyledIcon = styled.span<StyledIconProps>`
+  ${({ size = 'medium', weight = 'regular', fill = 'regular' }) =>
+    makeIconStyle(size, weight, fill)}
+`;
