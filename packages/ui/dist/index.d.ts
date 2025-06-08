@@ -15,4 +15,32 @@ interface TextProps extends HTMLAttributes<HTMLSpanElement> {
 
 declare const Text: ({ children, variant, color, width, textAlign, ellipsis, whiteSpace, tag, ...props }: TextProps) => _emotion_react_jsx_runtime.JSX.Element;
 
-export { Text };
+/**
+ * 아이콘 크기 타입
+ */
+type IconSize = 'small' | 'medium' | 'large';
+type IconWeight = 'regular' | 'light';
+type IconFill = 'regular' | 'light';
+/**
+ * Icon 컴포넌트 props
+ */
+interface IconProps extends HTMLAttributes<HTMLSpanElement> {
+    /** Material Symbols 아이콘 이름 */
+    name: string;
+    /** 아이콘 크기 */
+    size?: IconSize;
+    /** 아이콘 두께 */
+    weight?: IconWeight;
+    /** 아이콘 채움 */
+    fill?: IconFill;
+    /** 접근성: 스크린리더용 레이블 */
+    'aria-label'?: string;
+    /** 접근성: 장식용 여부 (boolean) */
+    'aria-hidden'?: boolean;
+}
+/**
+ * Material Symbols 아이콘 컴포넌트
+ */
+declare const Icon: ({ name, size, weight, fill, "aria-label": ariaLabel, "aria-hidden": ariaHidden, ...props }: IconProps) => _emotion_react_jsx_runtime.JSX.Element;
+
+export { Icon, type IconProps, Text };

@@ -75,6 +75,63 @@ var StyledText = styled.span`
 				text-overflow: ellipsis;
 			`}
 `;
+
+// src/components/Icon/Icon.tsx
+import styled2 from "@emotion/styled";
+import { css as css2 } from "@emotion/react";
+import { icon } from "@horizon/design-system";
+import { jsx as jsx2 } from "@emotion/react/jsx-runtime";
+var DEFAULT_ICON_PROPS = {
+  size: "medium",
+  weight: "regular",
+  fill: "regular"
+};
+var Icon = ({
+  name,
+  size = DEFAULT_ICON_PROPS.size,
+  weight = DEFAULT_ICON_PROPS.weight,
+  fill = DEFAULT_ICON_PROPS.fill,
+  "aria-label": ariaLabel,
+  "aria-hidden": ariaHidden,
+  ...props
+}) => /* @__PURE__ */ jsx2(
+  StyledIcon,
+  {
+    size,
+    weight,
+    fill,
+    role: ariaLabel ? "img" : void 0,
+    "aria-label": ariaLabel,
+    "aria-hidden": ariaHidden != null ? ariaHidden : !ariaLabel ? true : void 0,
+    ...props,
+    children: name
+  }
+);
+var baseIconStyle = css2`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ${icon.fontFamily.materialSymbols};
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+`;
+var makeIconStyle = (size, weight, fill) => css2`
+  ${baseIconStyle};
+  font-size: ${icon.iconSize[size]};
+  font-variation-settings: 'FILL' ${icon.fill[fill]},
+    'wght' ${weight === "regular" ? icon.weight.regular : icon.weight.light};
+`;
+var StyledIcon = styled2.span`
+  ${({ size, weight, fill }) => makeIconStyle(size, weight, fill)}
+`;
 export {
+  Icon,
   Text
 };

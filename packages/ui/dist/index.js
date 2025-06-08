@@ -30,6 +30,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.tsx
 var index_exports = {};
 __export(index_exports, {
+  Icon: () => Icon,
   Text: () => Text
 });
 module.exports = __toCommonJS(index_exports);
@@ -111,7 +112,64 @@ var StyledText = import_styled.default.span`
 				text-overflow: ellipsis;
 			`}
 `;
+
+// src/components/Icon/Icon.tsx
+var import_styled2 = __toESM(require("@emotion/styled"));
+var import_react2 = require("@emotion/react");
+var import_design_system2 = require("@horizon/design-system");
+var import_jsx_runtime2 = require("@emotion/react/jsx-runtime");
+var DEFAULT_ICON_PROPS = {
+  size: "medium",
+  weight: "regular",
+  fill: "regular"
+};
+var Icon = ({
+  name,
+  size = DEFAULT_ICON_PROPS.size,
+  weight = DEFAULT_ICON_PROPS.weight,
+  fill = DEFAULT_ICON_PROPS.fill,
+  "aria-label": ariaLabel,
+  "aria-hidden": ariaHidden,
+  ...props
+}) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+  StyledIcon,
+  {
+    size,
+    weight,
+    fill,
+    role: ariaLabel ? "img" : void 0,
+    "aria-label": ariaLabel,
+    "aria-hidden": ariaHidden != null ? ariaHidden : !ariaLabel ? true : void 0,
+    ...props,
+    children: name
+  }
+);
+var baseIconStyle = import_react2.css`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: ${import_design_system2.icon.fontFamily.materialSymbols};
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+`;
+var makeIconStyle = (size, weight, fill) => import_react2.css`
+  ${baseIconStyle};
+  font-size: ${import_design_system2.icon.iconSize[size]};
+  font-variation-settings: 'FILL' ${import_design_system2.icon.fill[fill]},
+    'wght' ${weight === "regular" ? import_design_system2.icon.weight.regular : import_design_system2.icon.weight.light};
+`;
+var StyledIcon = import_styled2.default.span`
+  ${({ size, weight, fill }) => makeIconStyle(size, weight, fill)}
+`;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  Icon,
   Text
 });

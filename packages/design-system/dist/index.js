@@ -22,7 +22,8 @@ var src_exports = {};
 __export(src_exports, {
   colors: () => colors,
   font: () => font,
-  globalStyle: () => globalStyle
+  globalStyle: () => globalStyle,
+  icon: () => icon
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -76,6 +77,7 @@ var colors = {
 // src/global.ts
 var globalStyle = import_react.css`
   @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css');
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..400,0..1,0');
 
   *,
   *::before,
@@ -211,9 +213,30 @@ var font = {
     140: "140%"
   }
 };
+
+// src/icon.ts
+var icon = {
+  fontFamily: {
+    materialSymbols: "'Material Symbols Outlined'"
+  },
+  iconSize: {
+    large: "2rem",
+    medium: "1.75rem",
+    small: "1.5rem"
+  },
+  weight: {
+    regular: 400,
+    light: 300
+  },
+  fill: {
+    regular: 1,
+    light: 0
+  }
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   colors,
   font,
-  globalStyle
+  globalStyle,
+  icon
 });
