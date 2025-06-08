@@ -1,3 +1,6 @@
+import React from 'react';
+import { Global } from '@emotion/react';
+import { globalStyle } from '@horizon/design-system';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
@@ -10,6 +13,14 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <>
+        <Global styles={globalStyle} />
+        <Story />
+      </>
+    ),
+  ],
 };
 
 export default preview;
