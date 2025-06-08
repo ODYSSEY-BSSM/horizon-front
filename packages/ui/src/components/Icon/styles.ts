@@ -25,6 +25,6 @@ export const makeIconStyle = (
 ) => css`
   ${baseIconStyle};
   font-size: ${icon.iconSize[size]};
-  font-weight: ${icon.weight[weight]};
-  font-variation-settings: 'FILL' ${icon.fill[fill]};
+  font-variation-settings: 'FILL' ${icon.fill[fill]},
+    'wght' ${icon.weight[weight]};
 `;
