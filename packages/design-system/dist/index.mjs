@@ -48,6 +48,7 @@ var colors = {
 // src/global.ts
 var globalStyle = css`
   @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css');
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..400,0..1,0');
 
   *,
   *::before,
@@ -183,8 +184,29 @@ var font = {
     140: "140%"
   }
 };
+
+// src/icon.ts
+var icon = {
+  fontFamily: {
+    materialSymbols: "'Material Symbols Outlined'"
+  },
+  iconSize: {
+    large: "2rem",
+    medium: "1.75rem",
+    small: "1.5rem"
+  },
+  weight: {
+    regular: 400,
+    light: 300
+  },
+  fill: {
+    regular: 1,
+    light: 0
+  }
+};
 export {
   colors,
   font,
-  globalStyle
+  globalStyle,
+  icon
 };

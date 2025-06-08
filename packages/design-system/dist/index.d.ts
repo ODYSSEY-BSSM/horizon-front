@@ -74,4 +74,23 @@ declare const font: {
     };
 };
 
-export { colors, font, globalStyle };
+declare const icon: {
+    readonly fontFamily: {
+        readonly materialSymbols: "'Material Symbols Outlined'";
+    };
+    readonly iconSize: {
+        readonly large: "2rem";
+        readonly medium: "1.75rem";
+        readonly small: "1.5rem";
+    };
+    readonly weight: {
+        readonly regular: 400;
+        readonly light: 300;
+    };
+    readonly fill: {
+        readonly regular: 1;
+        readonly light: 0;
+    };
+};
+
+export { colors, font, globalStyle, icon };
