@@ -24,8 +24,8 @@ export interface IconProps extends HTMLAttributes<HTMLSpanElement> {
   fill?: IconFill;
   /** 접근성: 스크린리더용 레이블 */
   'aria-label'?: string;
-  /** 접근성: 장식용 여부 */
-  'aria-hidden'?: boolean | 'true' | 'false';
+  /** 접근성: 장식용 여부 (boolean) */
+  'aria-hidden'?: boolean;
 }
 
 const DEFAULT_ICON_PROPS = {
@@ -52,7 +52,7 @@ export const Icon = ({
     fill={fill}
     role={ariaLabel ? 'img' : undefined}
     aria-label={ariaLabel}
-    aria-hidden={ariaHidden ?? (!ariaLabel ? 'true' : undefined)}
+    aria-hidden={ariaHidden ?? (!ariaLabel ? true : undefined)}
     {...props}
   >
     {name}
