@@ -98,7 +98,10 @@ var Text = ({
       as: tag,
       variant,
       ellipsis,
-      style: { color, textAlign, width, whiteSpace },
+      color,
+      width,
+      textAlign,
+      whiteSpace,
       ...props,
       children
     }
@@ -111,6 +114,10 @@ var StyledText = import_styled.default.span`
 				overflow: hidden;
 				text-overflow: ellipsis;
 			`}
+  color: ${({ color }) => color};
+  width: ${({ width }) => width};
+  text-align: ${({ textAlign }) => textAlign};
+  white-space: ${({ whiteSpace }) => whiteSpace};
 `;
 
 // src/components/Icon/Icon.tsx
