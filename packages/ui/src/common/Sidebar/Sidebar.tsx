@@ -58,7 +58,7 @@ export const Sidebar = () => {
 
 const StyledSidebar = styled.div`
   width: 266px;
-  height: 100%;
+  height: 100vh;
   background: ${colors.white};
   border-right: 1px solid ${colors.grayscale['100']};
   box-sizing: border-box;
