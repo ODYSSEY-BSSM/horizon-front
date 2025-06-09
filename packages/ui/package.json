@@ -22,7 +22,9 @@
     "@emotion/styled": "^11.11.0",
     "@horizon/design-system": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2",
+    "storybook-addon-react-router-v6": "^2.0.15"
   },
   "devDependencies": {
     "@emotion/types": "^0.7.0",
