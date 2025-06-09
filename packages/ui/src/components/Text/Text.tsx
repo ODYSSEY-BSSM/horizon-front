@@ -5,6 +5,10 @@ import { getTextStyles } from './styles';
 interface StyledTextProps {
   variant: TextVariant;
   ellipsis: boolean;
+  color?: string;
+  width?: string | number;
+  textAlign?: string;
+  whiteSpace?: string;
 }
 
 export const Text = ({
@@ -23,7 +27,10 @@ export const Text = ({
       as={tag}
       variant={variant}
       ellipsis={ellipsis}
-      style={{ color, textAlign, width, whiteSpace }}
+      color={color}
+      width={width}
+      textAlign={textAlign}
+      whiteSpace={whiteSpace}
       {...props}
     >
       {children}
@@ -40,4 +47,8 @@ const StyledText = styled.span<StyledTextProps>`
 				overflow: hidden;
 				text-overflow: ellipsis;
 			`}
+  color: ${({ color }) => color};
+  width: ${({ width }) => width};
+  text-align: ${({ textAlign }) => textAlign};
+  white-space: ${({ whiteSpace }) => whiteSpace};
 `;
