@@ -5,7 +5,7 @@ export const MAIN_ITEMS = [
   { name: '학교', icon: 'school', to: '/school' },
 ];
 
-export const ECT_ITEMS = [
+export const ETC_ITEMS = [
   { name: '계정', icon: 'person', to: '/account' },
   { name: '설정', icon: 'settings', to: '/settings' },
 ];

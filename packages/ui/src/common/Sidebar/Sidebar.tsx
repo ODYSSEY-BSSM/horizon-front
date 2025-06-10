@@ -5,7 +5,7 @@ import { Text } from '../../components/Text/Text';
 import { Column } from '../../components/Flex/Column';
 import { SidebarItem } from './SidebarItem/SidebarItem';
 import { Link } from 'react-router-dom';
-import { ECT_ITEMS, MAIN_ITEMS } from './constant';
+import { ETC_ITEMS, MAIN_ITEMS } from './constant';
 
 export const Sidebar = () => {
   return (
@@ -45,7 +45,7 @@ export const Sidebar = () => {
           기타
         </Text>
         <Column gap="10px">
-          {ECT_ITEMS.map(({ name, icon, to }) => (
+          {ETC_ITEMS.map(({ name, icon, to }) => (
             <SidebarItem icon={icon} to={to}>
               {name}
             </SidebarItem>
