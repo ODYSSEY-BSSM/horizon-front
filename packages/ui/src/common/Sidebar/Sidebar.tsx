@@ -27,7 +27,7 @@ export const Sidebar = () => {
         </Text>
         <Column gap="10px">
           {MAIN_ITEMS.map(({ name, icon, to }) => (
-            <SidebarItem icon={icon} to={to}>
+            <SidebarItem key={to} icon={icon} to={to}>
               {name}
             </SidebarItem>
           ))}
