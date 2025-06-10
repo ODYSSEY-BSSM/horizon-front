@@ -13,7 +13,7 @@ const meta = {
 
 ## 사용 방법
 \`\`\`tsx
-import { Text } from '@horizon/ui';
+import { Text } from '@odyssey-horizon/ui';
 
 // 기본 사용
 <Text variant="P_R_16">기본 텍스트</Text>

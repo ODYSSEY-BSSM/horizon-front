@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors } from '@horizon/design-system/src';
+import { colors } from '@odyssey-horizon/design-system/src';
 import { Row } from '../../components/Flex/Row';
 import { Text } from '../../components/Text/Text';
 import { Column } from '../../components/Flex/Column';

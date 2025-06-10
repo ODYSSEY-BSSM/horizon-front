@@ -1,6 +1,6 @@
 import React from 'react';
 import { Global } from '@emotion/react';
-import { globalStyle } from '@horizon/design-system';
+import { globalStyle } from '@odyssey-horizon/design-system';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {

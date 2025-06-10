@@ -14,7 +14,7 @@ Material Symbols 아이콘 컴포넌트입니다. 구글의 [Material Symbols](h
 ## 사용 예시
 
 ~~~tsx
-import { Icon } from '@horizon/ui';
+import { Icon } from '@odyssey-horizon/ui';
 
 <Icon name="home" />
 <Icon name="favorite" size="large" fill="light" style={{ color: 'tomato' }} />

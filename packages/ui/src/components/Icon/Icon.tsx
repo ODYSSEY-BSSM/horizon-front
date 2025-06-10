@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { icon } from '@horizon/design-system';
+import { icon } from '@odyssey-horizon/design-system';
 import type { HTMLAttributes } from 'react';
 
 /**
