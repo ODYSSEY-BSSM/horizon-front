@@ -20,9 +20,9 @@ export type TextVariant =
   | 'L_M_12'
   | 'P_R_16'
   | 'P_R_12'
-  | 'BTN_SB_16'
-  | 'BTN_SB_14'
-  | 'BTN_SB_12';
+  | 'BTN_M_28'
+  | 'BTN_M_24'
+  | 'BTN_M_20';
 
 export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   children: ReactNode;
