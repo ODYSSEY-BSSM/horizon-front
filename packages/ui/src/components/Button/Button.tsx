@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { Icon } from '../Icon/Icon';
 import { Text } from '../Text/Text';
 import { css } from '@emotion/react';
-import { colors } from '@horizon/design-system/src';
+import { colors } from '@odyssey-horizon/design-system';
 import {
   buttonBackgroundColor,
   buttonHeight,

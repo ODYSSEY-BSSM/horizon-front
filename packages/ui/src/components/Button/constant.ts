@@ -1,5 +1,5 @@
 import { ButtonTextVariant } from './Button.type';
-import { colors } from '@horizon/design-system/src';
+import { colors } from '@odyssey-horizon/design-system';
 
 export const textVariant = {
   small: 'BTN_M_20' as ButtonTextVariant,

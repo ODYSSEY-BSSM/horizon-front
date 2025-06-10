@@ -137,8 +137,8 @@ importers:
         specifier: ^11.11.0
         version: 11.14.0(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(@types/react@18.3.21)(react@18.3.1)
       '@odyssey-horizon/design-system':
-        specifier: ^0.0.2
-        version: 0.0.2(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
+        specifier: ^0.0.3
+        version: 0.0.3(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -1598,8 +1598,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@odyssey-horizon/design-system@0.0.2':
-    resolution: {integrity: sha512-N8oYPeAwnqa7Ob0clPUnlgw/dr2Olk16rtpImsnaTCARAtEo/aNCfULOHoj0nLLOas7yHEhrykdIf/CT5xLkrQ==}
+  '@odyssey-horizon/design-system@0.0.3':
+    resolution: {integrity: sha512-MzqVz4zWtTDDlv8npt/W/0OF77hPzqaunyTiI0WgOKsbY0M/txcSotxIP+1GXHvQSLZ+XIBhPkPOOX1sKlqrtg==}
     peerDependencies:
       '@emotion/react': ^11.10.6
       react: ^18.2.0
@@ -8467,7 +8467,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@odyssey-horizon/design-system@0.0.2(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
+  '@odyssey-horizon/design-system@0.0.3(@emotion/react@11.14.0(@types/react@18.3.21)(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@18.3.21)(react@18.3.1)
       react: 18.3.1
