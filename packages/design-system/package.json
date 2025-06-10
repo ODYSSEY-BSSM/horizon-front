@@ -1,7 +1,7 @@
 {
-  "name": "@horizon/design-system",
-  "version": "0.1.0",
-  "description": "Horizon Design System - A comprehensive design system for React applications",
+  "name": "@horizon-odyssey/design-system",
+  "version": "0.0.1",
+  "description": "Horizon Design System - Odyssey의 프로젝트, Horizon의 공통 디자인 시스템 패키지",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -21,9 +21,9 @@
   "keywords": [
     "react",
     "design-system",
-    "ui",
     "components",
-    "horizon"
+    "horizon",
+    "odyssey"
   ],
   "author": "ODYSSEY-BSSM",
   "scripts": {
