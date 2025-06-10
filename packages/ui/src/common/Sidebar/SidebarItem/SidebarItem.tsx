@@ -15,7 +15,6 @@ interface SidebarItemProps {
 export const SidebarItem = ({ children, icon, to }: SidebarItemProps) => {
   const location = useLocation();
   const isActive = location.pathname === to;
-  console.log(location.pathname);
 
   return (
     <StyledSidebarItem to={to} selected={isActive}>
