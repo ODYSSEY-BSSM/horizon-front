@@ -8,6 +8,7 @@ export const Row = ({
   height,
   padding,
   alignItems,
+  justifyContent,
   ...props
 }: FlexProps) => {
   return (

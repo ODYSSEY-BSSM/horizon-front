@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import type { TextVariant } from './types';
-import { font } from '@horizon/design-system';
+import { font } from '@odyssey-horizon/design-system';
 
 const baseTextStyle = css`
   font-family: ${font.fontFamily.suit};

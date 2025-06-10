@@ -1,6 +1,6 @@
 import { Row } from '../../../components/Flex/Row';
 import { Text } from '../../../components/Text/Text';
-import { colors } from '@horizon/design-system/src';
+import { colors } from '@odyssey-horizon/design-system/src';
 import { ReactNode } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from '@emotion/styled';

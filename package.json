@@ -1,5 +1,5 @@
 {
-  "name": "my-ui-monorepo",
+  "name": "odyssey-horizon-shared-ui",
   "version": "0.0.0",
   "private": true,
   "engines": {
@@ -13,9 +13,13 @@
     "test": "turbo run test",
     "storybook": "turbo run storybook",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "turbo run build --filter=./packages/* && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/jest": "^29.5.14",
