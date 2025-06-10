@@ -1,8 +1,4 @@
-import {
-  ButtonProps,
-  ButtonSize,
-  ButtonType,
-} from './Button.type';
+import { ButtonProps, ButtonSize, ButtonType } from './Button.type';
 import styled from '@emotion/styled';
 import { Icon } from '../Icon/Icon';
 import { Text } from '../Text/Text';
@@ -16,7 +12,6 @@ import {
   textVariant,
 } from './constant';
 
-
 export const Button = ({
   size = 'medium',
   type = 'contained',
@@ -27,8 +22,6 @@ export const Button = ({
   style,
   ...props
 }: ButtonProps) => {
-
-
   return (
     <StyledButton
       size={size}
@@ -45,26 +38,27 @@ export const Button = ({
   );
 };
 
-
 const makeButtonStyle = (
   size: ButtonSize,
   buttonType: ButtonType,
   round: boolean,
-  iconOnly: boolean,
+  iconOnly: boolean
 ) => css`
-  border-radius: ${round? "16px" : "8px"};
-  border: ${buttonType=="outlined"? `1px solid ${colors.primary['500']}` : "none"};
+  border-radius: ${round ? '16px' : '8px'};
+  border: ${buttonType == 'outlined'
+    ? `1px solid ${colors.primary['500']}`
+    : 'none'};
   height: ${buttonHeight[size]};
-  width: ${iconOnly? buttonHeight[size]:"auto"};
+  width: ${iconOnly ? buttonHeight[size] : 'auto'};
   background-color: ${buttonBackgroundColor[buttonType]['default']};
   color: ${buttonTextColor[buttonType]['default']};
   padding: 0 ${buttonPadding[size]};
 
-  &:hover{
+  &:hover {
     background-color: ${buttonBackgroundColor[buttonType]['hover']};
     color: ${buttonTextColor[buttonType]['hover']};
   }
-  &:active{
+  &:active {
     background-color: ${buttonBackgroundColor[buttonType]['pressed']};
     color: ${buttonTextColor[buttonType]['pressed']};
   }
@@ -80,5 +74,6 @@ const StyledButton = styled.button<{
   gap: 10px;
   align-items: center;
   justify-content: center;
-  ${({ size, buttonType, round, iconOnly }) => makeButtonStyle(size, buttonType, round, iconOnly)}
+  ${({ size, buttonType, round, iconOnly }) =>
+    makeButtonStyle(size, buttonType, round, iconOnly)}
 `;

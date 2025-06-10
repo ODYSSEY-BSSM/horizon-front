@@ -2,7 +2,7 @@ import React from 'react';
 
 export type ButtonSize = 'small' | 'medium' | 'large';
 export type ButtonType = 'contained' | 'outlined' | 'ghost' | 'text';
-export type ButtonTextVariant = 'BTN_M_20' | 'BTN_M_24' | 'BTN_M_28'
+export type ButtonTextVariant = 'BTN_M_20' | 'BTN_M_24' | 'BTN_M_28';
 
 export interface ButtonProps {
   size?: ButtonSize;

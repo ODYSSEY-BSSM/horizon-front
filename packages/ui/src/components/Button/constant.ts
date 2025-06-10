@@ -1,5 +1,5 @@
-import {ButtonTextVariant} from "./Button.type";
-import {colors} from "@horizon/design-system/src";
+import { ButtonTextVariant } from './Button.type';
+import { colors } from '@horizon/design-system/src';
 
 export const textVariant = {
   small: 'BTN_M_20' as ButtonTextVariant,
@@ -17,7 +17,7 @@ export const buttonPadding = {
   small: '12px',
   medium: '16px',
   large: '20px',
-}
+};
 
 export const buttonBackgroundColor = {
   contained: {
@@ -40,7 +40,7 @@ export const buttonBackgroundColor = {
     hover: colors.white,
     pressed: colors.white,
   },
-}
+};
 
 export const buttonTextColor = {
   contained: {
@@ -63,4 +63,4 @@ export const buttonTextColor = {
     hover: colors.primary['500'],
     pressed: colors.primary['600'],
   },
-}
+};
