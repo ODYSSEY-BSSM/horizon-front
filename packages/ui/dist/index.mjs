@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 // src/components/Text/styles.ts
 import { css } from "@emotion/react";
-import { font } from "@horizon/design-system";
+import { font } from "@odyssey-horizon/design-system";
 var baseTextStyle = css`
   font-family: ${font.fontFamily.suit};
   line-height: ${font.fontHeight[140]};
@@ -86,7 +86,7 @@ var StyledText = styled.span`
 // src/components/Icon/Icon.tsx
 import styled2 from "@emotion/styled";
 import { css as css2 } from "@emotion/react";
-import { icon } from "@horizon/design-system";
+import { icon } from "@odyssey-horizon/design-system";
 import { jsx as jsx2 } from "@emotion/react/jsx-runtime";
 var DEFAULT_ICON_PROPS = {
   size: "medium",

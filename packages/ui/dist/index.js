@@ -40,7 +40,7 @@ var import_styled = __toESM(require("@emotion/styled"));
 
 // src/components/Text/styles.ts
 var import_react = require("@emotion/react");
-var import_design_system = require("@horizon/design-system");
+var import_design_system = require("@odyssey-horizon/design-system");
 var baseTextStyle = import_react.css`
   font-family: ${import_design_system.font.fontFamily.suit};
   line-height: ${import_design_system.font.fontHeight[140]};
@@ -123,7 +123,7 @@ var StyledText = import_styled.default.span`
 // src/components/Icon/Icon.tsx
 var import_styled2 = __toESM(require("@emotion/styled"));
 var import_react2 = require("@emotion/react");
-var import_design_system2 = require("@horizon/design-system");
+var import_design_system2 = require("@odyssey-horizon/design-system");
 var import_jsx_runtime2 = require("@emotion/react/jsx-runtime");
 var DEFAULT_ICON_PROPS = {
   size: "medium",
