@@ -1,7 +1,7 @@
 {
   "name": "@horizon/ui",
   "version": "0.0.1",
-  "private": true,
+  "description": "Horizon UI Components - A collection of reusable React components",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,6 +9,21 @@
   "files": [
     "dist/**"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ODYSSEY-BSSM/horizon-shared-ui.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "horizon"
+  ],
+  "author": "ODYSSEY-BSSM",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
