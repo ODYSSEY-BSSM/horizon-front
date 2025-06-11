@@ -1,5 +1,13 @@
 # @odyssey-horizon/ui
 
+## 0.0.5
+
+### Patch Changes
+
+- bc89823: why no update
+- Updated dependencies [bc89823]
+  - @odyssey-horizon/design-system@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
