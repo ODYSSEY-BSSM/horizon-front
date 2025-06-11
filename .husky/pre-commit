@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm format
-npm test
+# lint-staged 실행
+pnpm lint-staged
+
+# lint-staged의 종료 코드를 확인
+if [ $? -ne 0 ]; then
+  echo "lint-staged 검사 실패. 커밋중단"
+  exit 1
+fi
+
+pnpm test
