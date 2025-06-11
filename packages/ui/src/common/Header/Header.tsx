@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { colors } from '@odyssey-horizon/design-system/src';
+import { colors } from '@odyssey-horizon/design-system';
 import { Text } from '../../components/Text/Text';
 
 interface HeaderProps {

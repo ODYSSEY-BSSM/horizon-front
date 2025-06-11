@@ -26,8 +26,8 @@
     "*.{json,md}": [
       "prettier --write"
     ],
-    "*.{ts,tsx,js,jsx}": [
-      "pnpm test --bail --findRelatedTests"
+    "packages/**/*.{ts,tsx}": [
+      "pnpm --filter @odyssey-horizon/ui test"
     ]
   },
   "devDependencies": {

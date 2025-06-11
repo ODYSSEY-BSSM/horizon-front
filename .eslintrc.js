@@ -6,7 +6,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'plugin:unused-imports/recommended',
     'prettier',
   ],
   env: {
@@ -16,10 +15,9 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-    'no-unused-vars': 'error',
+    'no-unused-vars': 'off',
     'no-undef': 'error',
     'no-undef-init': 'error',
-    'no-unused-imports': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'unused-imports/no-unused-imports': 'error',
