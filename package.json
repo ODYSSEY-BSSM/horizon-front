@@ -18,6 +18,18 @@
     "version": "changeset version",
     "release": "turbo run build --filter=./packages/* && changeset publish"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "*.{ts,tsx,js,jsx}": [
+      "pnpm test --bail --findRelatedTests"
+    ]
+  },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
     "@testing-library/jest-dom": "^6.6.3",
