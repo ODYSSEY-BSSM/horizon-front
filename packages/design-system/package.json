@@ -1,6 +1,6 @@
 {
   "name": "@odyssey-horizon/design-system",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Horizon Design System - Odyssey의 프로젝트, Horizon의 공통 디자인 시스템 패키지",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
