@@ -1,5 +1,11 @@
 # @odyssey-horizon/design-system
 
+## 0.0.5
+
+### Patch Changes
+
+- bc89823: why no update
+
 ## 0.0.4
 
 ### Patch Changes
