@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import type { TextProps, TextVariant } from './types';
-import { getTextStyles } from './styles';
+import type { TextProps, TextVariant } from './Text.types';
+import { getTextStyles } from './Text.styles';
 
 interface StyledTextProps {
   variant: TextVariant;
