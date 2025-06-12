@@ -21,8 +21,7 @@ export const SidebarItem = ({ children, icon, to }: SidebarItemProps) => {
       <Row gap="8px" alignItems="center">
         <Icon
           name={icon}
-          fill="light"
-          weight="light"
+          variant="Stroke_L_24"
           style={{
             color: isActive ? colors.primary['500'] : colors.grayscale['600'],
           }}

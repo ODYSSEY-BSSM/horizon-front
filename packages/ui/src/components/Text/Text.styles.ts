@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import type { TextVariant } from './types';
+import type { TextVariant } from './Text.types';
 import { font } from '@odyssey-horizon/design-system';
 
 const baseTextStyle = css`
@@ -38,9 +38,9 @@ export const getTextStyles = (variant: TextVariant) => {
     L_M_12: makeTextStyle(12, 'medium'),
     P_R_16: makeTextStyle(16, 'medium'),
     P_R_12: makeTextStyle(12, 'medium'),
-    BTN_SB_28: makeTextStyle(28, 'medium'),
-    BTN_SB_24: makeTextStyle(24, 'medium'),
-    BTN_SB_20: makeTextStyle(20, 'medium'),
+    BTN_M_28: makeTextStyle(28, 'medium'),
+    BTN_M_24: makeTextStyle(24, 'medium'),
+    BTN_M_20: makeTextStyle(20, 'medium'),
   };
 
   return styles[variant] || styles.H_B_16;

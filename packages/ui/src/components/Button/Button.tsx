@@ -31,9 +31,9 @@ export const Button = ({
       iconOnly={text.length === 0}
       {...props}
     >
-      {leftIcon && <Icon name={leftIcon} size={size} fill="light" />}
+      {leftIcon && <Icon name={leftIcon} variant="Stroke_R_28" />}
       {text && <Text variant={textVariant[size]}>{text}</Text>}
-      {rightIcon && <Icon name={rightIcon} size={size} fill="light" />}
+      {rightIcon && <Icon name={rightIcon} variant="Stroke_R_28" />}
     </StyledButton>
   );
 };
