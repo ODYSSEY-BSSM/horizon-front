@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import type { TextVariant } from './types';
+import type { TextVariant } from './Text.types';
 import { font } from '@odyssey-horizon/design-system';
 
 const baseTextStyle = css`
