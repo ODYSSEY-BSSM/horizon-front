@@ -14,17 +14,11 @@ type IconFill = 'regular' | 'light';
  * Icon 컴포넌트 props
  */
 export interface IconProps extends HTMLAttributes<HTMLSpanElement> {
-  /** Material Symbols 아이콘 이름 */
   name: string;
-  /** 아이콘 크기 */
   size?: IconSize;
-  /** 아이콘 두께 */
   weight?: IconWeight;
-  /** 아이콘 채움 */
   fill?: IconFill;
-  /** 접근성: 스크린리더용 레이블 */
   'aria-label'?: string;
-  /** 접근성: 장식용 여부 (boolean) */
   'aria-hidden'?: boolean;
 }
 
@@ -34,9 +28,6 @@ const DEFAULT_ICON_PROPS = {
   fill: 'regular' as IconFill,
 };
 
-/**
- * Material Symbols 아이콘 컴포넌트
- */
 export const Icon = ({
   name,
   size = DEFAULT_ICON_PROPS.size,
@@ -59,7 +50,6 @@ export const Icon = ({
   </StyledIcon>
 );
 
-// 스타일 관련 코드는 컴포넌트 하단에 위치
 const baseIconStyle = css`
   display: inline-flex;
   align-items: center;
