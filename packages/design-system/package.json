@@ -1,6 +1,7 @@
 {
   "name": "@odyssey-horizon/design-system",
   "version": "0.0.5",
+  "private": true,
   "description": "Horizon Design System - Odyssey의 프로젝트, Horizon의 공통 디자인 시스템 패키지",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -29,22 +30,16 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
-    "lint": "eslint src/**/*.ts*",
-    "test": "jest --passWithNoTests",
-    "prepublishOnly": "npm run build",
-    "clean": "rm -rf dist",
-    "prebuild": "npm run clean"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.10.6",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@configs/eslint": "workspace:*",
-    "@configs/tsconfig": "workspace:*",
-    "@emotion/react": "^11.14.0",
-    "@types/react": "^18.3.21",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
-    "tsup": "^6.7.0"
+    "tsup": "^8.0.2",
+    "typescript": "5.4.3"
   }
 }
