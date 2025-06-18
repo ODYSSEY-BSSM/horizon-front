@@ -1,32 +1,12 @@
 {
   "name": "@odyssey-horizon/design-system",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "private": true,
   "description": "Horizon Design System - Odyssey의 프로젝트, Horizon의 공통 디자인 시스템 패키지",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ODYSSEY-BSSM/horizon-shared-ui.git"
-  },
-  "keywords": [
-    "react",
-    "design-system",
-    "components",
-    "horizon",
-    "odyssey"
-  ],
-  "author": "ODYSSEY-BSSM",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",

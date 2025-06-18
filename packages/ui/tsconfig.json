@@ -1,11 +1,27 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "types": ["react", "@emotion/react/types/css-prop"]
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "paths": {
+      "@odyssey-horizon/design-system": ["../design-system/src"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

@@ -1,48 +1,31 @@
 {
   "name": "@odyssey-horizon/ui",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "private": true,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ODYSSEY-BSSM/horizon-shared-ui.git"
-  },
-  "keywords": [
-    "react",
-    "ui",
-    "components",
-    "horizon",
-    "odyssey"
-  ],
-  "author": "ODYSSEY-BSSM",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.57.0",
     "react": "^18.2.0",
-    "tsup": "^8.0.2",
-    "typescript": "5.4.3"
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0"
+    "@odyssey-horizon/design-system": "workspace:*",
+    "react-router-dom": "^6.22.3"
   }
 }
