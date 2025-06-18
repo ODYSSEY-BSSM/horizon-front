@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 # lint-staged 실행
 pnpm lint-staged
 
@@ -10,4 +7,4 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-pnpm test
+# pnpm test

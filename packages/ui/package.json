@@ -1,69 +1,31 @@
 {
   "name": "@odyssey-horizon/ui",
-  "version": "0.0.6",
-  "description": "Horizon UI - Odyssey의 프로젝트, Horizon의 공통 UI 컴포넌트 패키지",
+  "version": "0.1.0",
+  "private": true,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
-  "license": "MIT",
-  "files": [
-    "dist/**"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ODYSSEY-BSSM/horizon-shared-ui.git"
-  },
-  "keywords": [
-    "react",
-    "ui",
-    "components",
-    "horizon",
-    "odyssey"
-  ],
-  "author": "ODYSSEY-BSSM",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "lint": "eslint \"src/**/*.ts*\"",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "lint": "eslint src/",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
-  "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@odyssey-horizon/design-system": "^0.0.5",
+  "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^7.6.2",
-    "storybook-addon-react-router-v6": "^2.0.15"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@emotion/types": "^0.7.0",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-interactions": "^7.6.17",
-    "@storybook/addon-links": "^7.6.17",
-    "@storybook/blocks": "^7.6.17",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.20",
-    "@storybook/testing-library": "^0.2.2",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@types/jest": "^29.5.14",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "eslint": "^8.0.0",
-    "storybook": "^7.6.17",
-    "ts-jest": "^29.3.2",
+    "eslint": "^8.57.0",
+    "react": "^18.2.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "peerDependencies": {
-    "react": "^18.2.0"
+  "dependencies": {
+    "@odyssey-horizon/design-system": "workspace:*",
+    "react-router-dom": "^6.22.3"
   }
 }

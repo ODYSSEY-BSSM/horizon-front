@@ -1,6 +1,10 @@
 import { FlexProps } from './Flex.type';
 import styled from '@emotion/styled';
 
+export interface RowProps extends FlexProps {
+  gap?: number;
+}
+
 export const Row = ({
   children,
   gap,
@@ -10,9 +14,19 @@ export const Row = ({
   alignItems,
   justifyContent,
   ...props
-}: FlexProps) => {
+}: RowProps) => {
   return (
-    <StyledRow style={{ gap, width, height, padding, alignItems, ...props }}>
+    <StyledRow
+      style={{
+        gap: gap ? `${gap}px` : undefined,
+        width,
+        height,
+        padding,
+        alignItems,
+        justifyContent,
+        ...props.props,
+      }}
+    >
       {children}
     </StyledRow>
   );
@@ -20,4 +34,5 @@ export const Row = ({
 
 const StyledRow = styled.div`
   display: flex;
+  flex-direction: row;
 `;
