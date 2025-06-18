@@ -7,7 +7,11 @@
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "turbo run clean && rm -rf node_modules",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "editor:dev": "turbo run dev --filter=editor",
+    "editor:build": "turbo run build --filter=editor",
+    "landing:dev": "turbo run dev --filter=landing",
+    "landing:build": "turbo run build --filter=landing"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
@@ -18,6 +22,11 @@
     "prettier": "^3.2.5",
     "turbo": "^1.12.4",
     "typescript": "5.4.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "zustand": "^5.0.5"
   },
   "packageManager": "pnpm@10.11.1",
   "engines": {

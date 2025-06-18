@@ -7,6 +7,16 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@emotion/react':
+        specifier: ^11.14.0
+        version: 11.14.0(@types/react@18.3.23)(react@18.3.1)
+      '@emotion/styled':
+        specifier: ^11.14.0
+        version: 11.14.0(@emotion/react@11.14.0(@types/react@18.3.23)(react@18.3.1))(@types/react@18.3.23)(react@18.3.1)
+      zustand:
+        specifier: ^5.0.5
+        version: 5.0.5(@types/react@18.3.23)(react@18.3.1)(use-sync-external-store@1.5.0(react@18.3.1))
     devDependencies:
       '@types/node':
         specifier: ^20.11.24
@@ -101,12 +111,6 @@ importers:
 
   landing:
     dependencies:
-      '@odyssey-horizon/design-system':
-        specifier: workspace:*
-        version: link:../packages/design-system
-      '@odyssey-horizon/ui':
-        specifier: workspace:*
-        version: link:../packages/ui
       next:
         specifier: 15.1.1
         version: 15.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -117,9 +121,6 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@configs/tsconfig':
-        specifier: workspace:*
-        version: link:../configs/tsconfig
       '@types/node':
         specifier: ^20.11.24
         version: 20.19.0
